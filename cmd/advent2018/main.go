@@ -8,6 +8,8 @@ import (
 	"github.com/gsmcwhirter/advent2018/pkg/day1"
 	"github.com/gsmcwhirter/advent2018/pkg/day2"
 	"github.com/gsmcwhirter/advent2018/pkg/day3"
+	"github.com/gsmcwhirter/advent2018/pkg/day4"
+	"github.com/gsmcwhirter/advent2018/pkg/day5"
 )
 
 func main() {
@@ -43,9 +45,15 @@ func run() int {
 		return reportErr(day3.RunA(args))
 	case "3b":
 		return reportErr(day3.RunB(args))
+	case "4a":
+		return reportErr(day4.RunA(args))
+	case "4b":
+		return reportErr(day4.RunB(args))
+	case "5a":
+		return reportErr(day5.RunA(args))
+	case "5b":
+		return reportErr(day5.RunB(args))
 	default:
 		return reportErr(errors.New("missing day command"))
 	}
-
-	return 0
 }
